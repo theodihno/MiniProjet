@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MiniProjet</string>
+    <string name="desc_password_icon">Afficher le mot de pass</string>
+    <string name="desc_password_hide">Masque le mot de pass</string>
+</resources>
