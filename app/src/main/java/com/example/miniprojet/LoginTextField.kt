@@ -9,6 +9,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.VisibilityOff
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -73,8 +74,10 @@ fun LoginTextField(
                         Icon(
                             imageVector = if (isHided) Icons.Filled.VisibilityOff else Icons.Filled.Visibility,
                             contentDescription = if (isHided) {
+                                //affiche le password
                                 stringResource(id = R.string.desc_password_icon)
                             } else {
+                                // cache le password
                                 stringResource(id = R.string.desc_password_hide)
                             }
                         )
@@ -96,12 +99,14 @@ fun LoginTextField(
     }
 
 }
+
 @Preview(showBackground = true)
 @Composable
 fun LoginTextFieldPreview(){
     LoginTextField(
+        isPassword = true,
         label = "Email ID",
-        placeholder = "insérer le password",
+        placeholder = "insérer le password"
         //isPassword = true
     )
 }
