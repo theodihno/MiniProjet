@@ -4,14 +4,21 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBackIosNew
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.IconButtonColors
+import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
@@ -55,7 +62,7 @@ fun LoginOutlinedButton(
             // le contentColor doit être black ou encbore la couleur du texte
             contentColor = Color.Black,
         ),
-        onClick = {}){
+        onClick = {/*TODO*/}){
         Text(
             text = text,
             fontWeight = FontWeight.SemiBold,
@@ -94,6 +101,31 @@ fun LoginThirdPartyRow(
             )
         }
     }
+}
+
+// création du buttonBack pour naviguer vers la page précédente
+
+@Composable
+fun LoginButtonBack(){
+    IconButton(
+        modifier = Modifier
+            .clip(CircleShape)
+            .size(40.dp),
+        colors = IconButtonDefaults.iconButtonColors(
+            containerColor = Color(0xFFDE7E82),
+            contentColor = Color.White,
+        ),
+        onClick = {/*TODO*/}){
+        Icon(imageVector = Icons.Filled.ArrowBackIosNew,
+            contentDescription = stringResource(R.string.desc_button_back)
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun LoginButtonBackPreview(){
+    LoginButtonBack()
 }
 
 @Preview(showBackground = true)

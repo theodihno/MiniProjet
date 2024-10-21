@@ -51,7 +51,7 @@ android {
 
 dependencies {
     //implementation(libs.androidx.constraintlayout.compose)
-    val nav_version = "2.7.7"
+    //val nav_version = "2.7.7"
     val lifecycle_version = "2.8.3"
     val arch_version = "2.2.0"
 
@@ -76,11 +76,11 @@ dependencies {
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
 
-    implementation("androidx.navigation:navigation-compose:$nav_version")
+    implementation("androidx.navigation:navigation-compose:2.7.7")
 
     implementation ("androidx.compose.material:material-icons-core:1.4.3")
     implementation ("androidx.compose.material:material-icons-extended:1.4.3")
 
     // Navigation
-    implementation ("androidx.navigation:navigation-compose:2.5.3")
+    implementation ("androidx.navigation:navigation-compose:2.7.7")
 }

@@ -46,7 +46,14 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun LoginPage(){
-    Column {
+    Column (
+        modifier = Modifier
+            .padding(all = 20.dp),
+    ){
+        // insertion du LoginbuttonBack
+        LoginButtonBack()
+        Spacer(modifier = Modifier.height(30.dp))
+
         // le titre Login en en-tête
         Text(
             fontSize = 36.sp,
@@ -105,7 +112,7 @@ fun LoginPage(){
 
         // LoginClikableText
         LoginClickableText(
-            modifier = Modifier.align(Alignment.CenterHorizontally),
+            modifier = Modifier.align(CenterHorizontally),
             text = buildCreateAccountAnnotatedString(),
         )
 
