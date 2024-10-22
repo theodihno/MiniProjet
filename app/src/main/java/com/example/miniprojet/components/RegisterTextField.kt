@@ -31,7 +31,7 @@ import com.example.miniprojet.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun LoginTextField(
+fun RegisterTextField(
     label:String, // on ajoute la possibilité de pouvoir modifier le label
     placeholder: String,
     modifier: Modifier = Modifier,
@@ -100,8 +100,8 @@ fun LoginTextField(
 
 @Preview(showBackground = true)
 @Composable
-fun LoginTextFieldPreview(){
-    LoginTextField(
+fun RegisterTextFieldPreview(){
+    RegisterTextField(
         isPassword = true,
         label = "Email ID",
         placeholder = "insérer le password"

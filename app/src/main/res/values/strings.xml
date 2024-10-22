@@ -6,4 +6,5 @@
     <string name="desc_login_with_google">Se connecter avec Google</string>
     <string name="desc_login_with_apple">Se connecter avec Apple</string>
     <string name="desc_button_back">Naviguer vers la page precedente</string>
+    <string name="desc_logo_register">Image de la page Register</string>
 </resources>
