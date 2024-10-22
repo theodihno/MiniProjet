@@ -1,4 +1,4 @@
-package com.example.miniprojet
+package com.example.miniprojet.components
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
