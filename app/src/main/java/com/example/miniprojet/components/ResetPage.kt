@@ -62,7 +62,7 @@ fun ResetPage(){
         ResetTextField(
             modifier = Modifier.fillMaxWidth(),
             label = "Confirm Password",
-            placeholder = "Enter New Password",
+            placeholder = "Confirm New Password",
             isPassword = true,
         )
         Spacer(modifier = Modifier.height(30.dp))
