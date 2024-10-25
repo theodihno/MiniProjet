@@ -104,7 +104,7 @@ fun LoginTextFieldPreview(){
     LoginTextField(
         isPassword = true,
         label = "Email ID",
-        placeholder = "insérer le password"
+        placeholder = "insérer une adresse mail"
         //isPassword = true
     )
 }
