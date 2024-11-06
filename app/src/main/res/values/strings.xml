@@ -7,4 +7,7 @@
     <string name="desc_login_with_apple">Se connecter avec Apple</string>
     <string name="desc_button_back">Naviguer vers la page precedente</string>
     <string name="desc_logo_register">Image de la page Register</string>
+    <string name="desc_logo_house">Image de Home Accueil</string>
+    <string name="desc_logo_setting">Image de la roue de Settings</string>
+    <string name="desc_logo_notification">Image de la Cloche de Notif</string>
 </resources>
